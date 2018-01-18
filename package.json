@@ -2,7 +2,8 @@
   "name": "@ngx-rapid/parent",
   "version": "0.0.0",
   "description": "",
-  "scripts": {},
+  "scripts": {
+  },
   "author": "Piotr Kosmowski",
   "license": "MIT",
   "devDependencies": {
