@@ -2,17 +2,21 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/app",
-    "baseUrl": "./",
-    "rootDir": "./",
+    "baseUrl": "../../",
+    "rootDir": "../../",
     "module": "es2015",
     "types": [],
-    "paths":{
+    "paths": {
+      "@ngx-rapid/core": [
+        "./core"
+      ],
+      "*": [
+        "./demo/node_modules/*"
+      ]
     }
   },
   "exclude": [
     "test.ts",
-    "**/*.spec.ts",
-    "node_modules",
-    "**/*/node_modules"
+    "**/*.spec.ts"
   ]
 }
