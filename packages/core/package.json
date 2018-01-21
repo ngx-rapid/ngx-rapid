@@ -1,6 +1,6 @@
 {
   "name": "@ngx-rapid/core",
-  "version": "0.0.1-0",
+  "version": "1.0.0",
   "main": "dist/bundles/core.umd.js",
   "scripts": {
     "build": "ng-packagr"
