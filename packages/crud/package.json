@@ -1,16 +1,20 @@
 {
-  "name": "@ngx-rapid/core",
+  "name": "@ngx-rapid/",
   "version": "0.0.1-0",
-  "main": "dist/bundles/core.umd.js",
+  "main": "dist/bundles/.umd.js",
   "scripts": {
     "build": "ng-packagr"
   },
   "peerDependencies": {
     "@angular/core": "^5.0.0",
+    "@ngx-rapid/core": "0.0.0",
+    "@ngx-rapid/form": "0.0.0",
     "rxjs": "^5.5.0"
   },
   "devDependencies": {
     "@angular/core": "^5.0.0",
+    "@ngx-rapid/core": "^0.0.1-0",
+    "@ngx-rapid/form": "^0.0.1-0",
     "ng-packagr": "^1.6.0",
     "typescript": "~2.4.2"
   },
@@ -22,8 +26,8 @@
       "entryFile": "src/index.ts"
     }
   },
-  "module": "dist/@ngx-rapid/core.es5.js",
-  "es2015": "dist/@ngx-rapid/core.js",
-  "typings": "dist/core.d.ts",
-  "metadata": "dist/core.metadata.json"
+  "module": "dist/@ngx-rapid/.es5.js",
+  "es2015": "dist/@ngx-rapid/.js",
+  "typings": "dist/.d.ts",
+  "metadata": "dist/.metadata.json"
 }
