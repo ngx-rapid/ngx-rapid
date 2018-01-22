@@ -1,6 +1,6 @@
 {
   "name": "@ngx-rapid/core",
-  "version": "0.0.0",
+  "version": "0.0.1-2",
   "main": "dist/bundles/core.umd.js",
   "publishConfig": {
     "access": "public"
