@@ -1,6 +1,6 @@
 {
   "name": "@ngx-rapid/form",
-  "version": "0.0.1-34",
+  "version": "0.0.1-35",
   "main": "dist/bundles/form.umd.js",
   "private": false,
   "publishConfig": {
@@ -20,7 +20,7 @@
   "devDependencies": {
     "@angular/core": "^5.0.0",
     "@compodoc/compodoc": "^1.0.5",
-    "@ngx-rapid/core": "^0.0.1-34",
+    "@ngx-rapid/core": "^0.0.1-35",
     "ng-packagr": "^1.6.0",
     "typescript": "~2.4.2"
   },
