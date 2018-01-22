@@ -1,2 +1,2 @@
-export * from './form/form.component'
-export * from './form/form.module'
+export * from './crud/crud.component'
+export * from './crud/crud.module'

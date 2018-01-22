@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
 
-import {FormComponent} from "./form.component";
+import {CrudComponent} from "./crud.component";
 
+/**
+ * This is sample documentation
+ */
 
 @NgModule({
   declarations: [
-    FormComponent
+    CrudComponent
   ],
   imports: [],
-  exports: [FormComponent],
+  exports: [CrudComponent],
   providers: []
 })
-export class FormModule { }
+export class CrudModule { }

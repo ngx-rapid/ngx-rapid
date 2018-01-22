@@ -11,11 +11,15 @@
     "typeRoots": [
       "node_modules/@types"
     ],
-    "baseUrl": "../",
-    "rootDir": "../",
+    "baseUrl": "./",
+    "rootDir": "./",
     "lib": [
       "es2017",
       "dom"
     ]
-  }
+  },
+  "exclude": [
+    "node_modules/",
+    "dist/"
+  ]
 }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'formify-sample',
+  selector: 'rapid-core-sample',
   templateUrl: './sample.component.html',
   styleUrls: ['./sample.component.scss']
 })

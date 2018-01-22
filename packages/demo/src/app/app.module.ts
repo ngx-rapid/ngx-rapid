@@ -4,6 +4,7 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 
 import {AppComponent} from './app.component';
+import {FormModule} from '@ngx-rapid/form';
 import {SampleModule} from '@ngx-rapid/core';
 
 @NgModule({
@@ -13,7 +14,8 @@ import {SampleModule} from '@ngx-rapid/core';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SampleModule
+    SampleModule,
+    FormModule
   ],
   providers: [],
   bootstrap: [AppComponent]

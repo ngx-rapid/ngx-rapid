@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {Field} from "@ngx-rapid/core";
 
 @Component({
-  selector: 'formify-sample',
-  templateUrl: './sample.component.html',
-  styleUrls: ['./sample.component.scss']
+    selector: 'rapid-form',
+    templateUrl: './form.component.html',
+    styleUrls: ['./form.component.scss']
 })
-export class SampleComponent {
+export class FormComponent {
+    field = new Field('test')
 }

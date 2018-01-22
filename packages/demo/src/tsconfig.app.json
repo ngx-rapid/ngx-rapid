@@ -5,15 +5,7 @@
     "baseUrl": "../../",
     "rootDir": "../../",
     "module": "es2015",
-    "types": [],
-    "paths": {
-      "@ngx-rapid/core": [
-        "./core"
-      ],
-      "*": [
-        "./demo/node_modules/*"
-      ]
-    }
+    "types": []
   },
   "exclude": [
     "test.ts",
