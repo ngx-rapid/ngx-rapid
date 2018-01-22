@@ -3,18 +3,23 @@
 	"version": "0.0.0",
 	"description": "",
 	"scripts": {
-		"site": "rm -rf ./dist/ && npm run build:site && npm run build:demo && npm run build:api",
+		"site": "rm -rf ./dist/ && npm run build:site && npm run build:demo && npm run build:api && npm run postprocess",
 		"build:site": "cp -r ./src/ ./dist",
 		"build:demo": "cp -r ../demo/dist ./dist/demo",
 		"build:api": "mkdir ./dist/api && npm run build:api:form && npm run build:api:crud",
 		"build:api:form": "cp -r ../form/dist/docs ./dist/api/form",
 		"build:api:crud": "cp -r ../crud/dist/docs ./dist/api/crud",
-		"publish": "gh-pages -d dist"
+		"postprocess": "npm run postprocess:demo && npm run postprocess:version",
+		"postprocess:demo": "replace '<base href=\"/\">' '<base href=\"/demo/\">' dist/demo/index.html",
+		"postprocess:version": "replace '__CURRENT_VERSION__' $npm_package_version dist -r",
+		"publish": "gh-pages -d dist -r git@github.com:ngx-rapid/ngx-rapid.github.io.git -b master -g $npm_package_version",
+		"help": "gh-pages --help"
 	},
 	"author": "Piotr Kosmowski",
 	"license": "MIT",
 	"devDependencies": {
 		"@compodoc/compodoc": "^1.0.5",
-		"gh-pages": "^1.1.0"
+		"gh-pages": "^1.1.0",
+		"replace": "^0.3.0"
 	}
 }

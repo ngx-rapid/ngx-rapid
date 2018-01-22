@@ -4,8 +4,9 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 
 import {AppComponent} from './app.component';
-import {FormModule} from '@ngx-rapid/form';
 import {SampleModule} from '@ngx-rapid/core';
+import {FormModule} from '@ngx-rapid/form';
+import {CrudModule} from '@ngx-rapid/crud';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {SampleModule} from '@ngx-rapid/core';
     BrowserModule,
     AppRoutingModule,
     SampleModule,
-    FormModule
+    FormModule,
+    CrudModule
   ],
   providers: [],
   bootstrap: [AppComponent]
