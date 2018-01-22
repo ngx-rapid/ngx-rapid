@@ -1,6 +1,6 @@
 {
   "name": "@ngx-rapid/core",
-  "version": "0.0.1-30",
+  "version": "0.0.1-31",
   "main": "dist/bundles/core.umd.js",
   "private": false,
   "publishConfig": {
