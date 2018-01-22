@@ -1,6 +1,6 @@
 {
   "name": "@ngx-rapid/form",
-  "version": "0.0.1-21",
+  "version": "0.0.1-22",
   "main": "dist/bundles/form.umd.js",
   "private": false,
   "publishConfig": {
