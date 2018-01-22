@@ -28,8 +28,8 @@
       "entryFile": "src/index.ts"
     }
   },
-  "module": "dist/@ngx-rapid/.es5.js",
-  "es2015": "dist/@ngx-rapid/.js",
-  "typings": "dist/.d.ts",
-  "metadata": "dist/.metadata.json"
+  "module": "dist/@ngx-rapid/crud.es5.js",
+  "es2015": "dist/@ngx-rapid/crud.js",
+  "typings": "dist/crud.d.ts",
+  "metadata": "dist/crud.metadata.json"
 }

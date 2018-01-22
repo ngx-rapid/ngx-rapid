@@ -1,13 +1,13 @@
 {
-  "name": "@ngx-rapid/docs",
-  "version": "0.0.0",
-  "description": "",
-  "scripts": {
-    "build": "./node_modules/.bin/compodoc ../ -p tsconfig.docs.json -d ./dist"
-  },
-  "author": "Piotr Kosmowski",
-  "license": "MIT",
-  "devDependencies": {
-    "@compodoc/compodoc": "^1.0.5"
-  }
+	"name": "@ngx-rapid/docs",
+	"version": "0.0.0",
+	"description": "",
+	"scripts": {
+		"build": "./node_modules/.bin/compodoc ../ -p tsconfig.docs.json -d ./dist"
+	},
+	"author": "Piotr Kosmowski",
+	"license": "MIT",
+	"devDependencies": {
+		"@compodoc/compodoc": "^1.0.5"
+	}
 }
