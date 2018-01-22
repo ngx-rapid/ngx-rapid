@@ -1,11 +1,8 @@
 {
   "name": "@ngx-rapid/core",
-  "version": "0.0.1-8",
+  "version": "0.0.1-9",
   "main": "dist/bundles/core.umd.js",
   "private": false,
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "ng-packagr",
