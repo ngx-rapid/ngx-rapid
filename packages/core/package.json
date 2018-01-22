@@ -1,6 +1,6 @@
 {
   "name": "@ngx-rapid/core",
-  "version": "0.0.1-7",
+  "version": "0.0.1-8",
   "main": "dist/bundles/core.umd.js",
   "private": false,
   "publishConfig": {
@@ -32,5 +32,8 @@
   "module": "dist/@ngx-rapid/core.es5.js",
   "es2015": "dist/@ngx-rapid/core.js",
   "typings": "dist/core.d.ts",
-  "metadata": "dist/core.metadata.json"
+  "metadata": "dist/core.metadata.json",
+  "files": [
+    "dist"
+  ]
 }

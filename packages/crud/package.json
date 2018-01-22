@@ -1,8 +1,8 @@
 {
   "name": "@ngx-rapid/crud",
-  "version": "0.0.1-7",
+  "version": "0.0.1-8",
   "main": "dist/bundles/crud.umd.js",
-  "private": true,
+  "private": false,
   "publishConfig": {
     "access": "private"
   },
@@ -20,8 +20,8 @@
   "devDependencies": {
     "@angular/core": "^5.0.0",
     "@compodoc/compodoc": "^1.0.5",
-    "@ngx-rapid/core": "^0.0.1-7",
-    "@ngx-rapid/form": "^0.0.1-7",
+    "@ngx-rapid/core": "^0.0.1-8",
+    "@ngx-rapid/form": "^0.0.1-8",
     "ng-packagr": "^1.6.0",
     "typescript": "~2.4.2"
   },
@@ -36,5 +36,8 @@
   "module": "dist/@ngx-rapid/crud.es5.js",
   "es2015": "dist/@ngx-rapid/crud.js",
   "typings": "dist/crud.d.ts",
-  "metadata": "dist/crud.metadata.json"
+  "metadata": "dist/crud.metadata.json",
+  "files": [
+    "dist"
+  ]
 }
