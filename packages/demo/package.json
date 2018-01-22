@@ -1,6 +1,6 @@
 {
   "name": "@ngx-rapid/demo",
-  "version": "0.0.1-11",
+  "version": "0.0.1-12",
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf ./dist",
@@ -22,9 +22,9 @@
     "@angular/platform-browser": "^5.0.0",
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^5.0.0",
-    "@ngx-rapid/core": "^0.0.1-11",
-    "@ngx-rapid/crud": "^0.0.1-11",
-    "@ngx-rapid/form": "^0.0.1-11",
+    "@ngx-rapid/core": "^0.0.1-12",
+    "@ngx-rapid/crud": "^0.0.1-12",
+    "@ngx-rapid/form": "^0.0.1-12",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
