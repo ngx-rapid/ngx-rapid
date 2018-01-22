@@ -1,6 +1,6 @@
 {
   "name": "@ngx-rapid/form",
-  "version": "0.0.1-22",
+  "version": "0.0.1-23",
   "main": "dist/bundles/form.umd.js",
   "private": false,
   "publishConfig": {
@@ -10,8 +10,7 @@
     "clean": "rm -rf ./dist",
     "build": "ng-packagr",
     "docs": "./node_modules/.bin/compodoc ./src/ -p tsconfig.docs.json -d dist/docs",
-    "prepublish": "echo prepublish",
-    "publish2": "cd dist && npm publish"
+    "prepare": "npm run build && npm run docs"
   },
   "peerDependencies": {
     "@angular/core": "^5.0.0",
@@ -36,8 +35,5 @@
   "module": "dist/@ngx-rapid/form.es5.js",
   "es2015": "dist/@ngx-rapid/form.js",
   "typings": "dist/form.d.ts",
-  "metadata": "dist/form.metadata.json",
-  "files": [
-    "**/*"
-  ]
+  "metadata": "dist/form.metadata.json"
 }
