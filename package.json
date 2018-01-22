@@ -7,13 +7,13 @@
     "install": "lerna bootstrap",
     "build": "lerna run build",
     "docs": "lerna run docs",
+    "site": "lerna run site",
     "release": "npm run build && npm run docs && npm run site"
 
   },
   "author": "Piotr Kosmowski",
   "license": "MIT",
   "devDependencies": {
-    "@compodoc/compodoc": "^1.0.5",
     "lerna": "^2.7.1"
   }
 }

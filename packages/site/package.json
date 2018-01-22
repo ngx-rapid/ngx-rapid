@@ -4,11 +4,11 @@
 	"description": "",
 	"scripts": {
 		"site": "rm -rf ./dist/ && npm run build:site && npm run build:demo && npm run build:api",
-		"site:site": "cp -r ./src/ ./dist",
-		"site:demo": "cp -r ../demo/dist ./dist/demo",
-		"site:api": "mkdir ./dist/api && npm run site:api:form && npm run site:api:crud",
-		"site:api:form": "cp -r ../form/dist/docs ./dist/api/form",
-		"site:api:crud": "cp -r ../crud/dist/docs ./dist/api/crud",
+		"build:site": "cp -r ./src/ ./dist",
+		"build:demo": "cp -r ../demo/dist ./dist/demo",
+		"build:api": "mkdir ./dist/api && npm run build:api:form && npm run build:api:crud",
+		"build:api:form": "cp -r ../form/dist/docs ./dist/api/form",
+		"build:api:crud": "cp -r ../crud/dist/docs ./dist/api/crud",
 		"publish": "gh-pages -d dist"
 	},
 	"author": "Piotr Kosmowski",
