@@ -1,8 +1,11 @@
 {
   "name": "@ngx-rapid/crud",
-  "version": "0.0.1-10",
+  "version": "0.0.1-11",
   "main": "dist/bundles/crud.umd.js",
   "private": false,
+  "publish": {
+    "access": "public"
+  },
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "ng-packagr",
@@ -17,8 +20,8 @@
   "devDependencies": {
     "@angular/core": "^5.0.0",
     "@compodoc/compodoc": "^1.0.5",
-    "@ngx-rapid/core": "^0.0.1-10",
-    "@ngx-rapid/form": "^0.0.1-10",
+    "@ngx-rapid/core": "^0.0.1-11",
+    "@ngx-rapid/form": "^0.0.1-11",
     "ng-packagr": "^1.6.0",
     "typescript": "~2.4.2"
   },
