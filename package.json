@@ -7,7 +7,7 @@
     "install": "lerna bootstrap",
     "build": "lerna run build",
     "docs": "lerna run docs",
-    "release": "npm run build && npm run docs"
+    "release": "npm run build && npm run docs && npm run site"
 
   },
   "author": "Piotr Kosmowski",
