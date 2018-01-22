@@ -1,7 +1,8 @@
 {
 	"name": "@ngx-rapid/site",
-	"version": "0.0.1-5",
+	"version": "0.0.1-6",
 	"description": "",
+	"private": true,
 	"scripts": {
 		"clean": "rm -rf ./dist",
 		"site": "rm -rf ./dist/ && npm run build:site && npm run build:demo && npm run build:api && npm run postprocess",
