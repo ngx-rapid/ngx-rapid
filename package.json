@@ -3,13 +3,14 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "clean": "lerna clean",
+    "version:bump:prerelease": "lerna publish --cd-version=prerelease --skip-git --skip-npm --yes",
+    "clean": "lerna clean --yes && lerna run clean",
     "install": "lerna bootstrap",
     "build": "lerna run build",
     "docs": "lerna run docs",
     "site": "lerna run site",
-    "release": "npm run build && npm run docs && npm run site"
-
+    "package": "npm run build && npm run docs && npm run site",
+    "publish": "lerna publish --repo-version"
   },
   "author": "Piotr Kosmowski",
   "license": "MIT",

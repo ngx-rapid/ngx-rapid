@@ -1,1 +1,0 @@
-Hello, this is documentation for the version: __CURRENT_VERSION__

@@ -2,7 +2,11 @@
   "name": "@ngx-rapid/form",
   "version": "0.0.0",
   "main": "dist/bundles/form.umd.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
+    "clean": "rm -rf ./dist",
     "build": "ng-packagr",
     "docs": "./node_modules/.bin/compodoc ./src/ -p tsconfig.docs.json -d dist/docs"
   },
