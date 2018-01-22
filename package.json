@@ -1,16 +1,15 @@
 {
-  "name": "@ngx-rapid/parent",
-  "version": "0.0.0",
+  "name": "ngx-rapid",
+  "private": true,
   "description": "",
   "scripts": {
-    "version:bump:prerelease": "lerna publish --cd-version=prerelease --skip-git --skip-npm --yes",
     "clean": "lerna clean --yes && lerna run clean",
     "install": "lerna bootstrap",
     "build": "lerna run build",
-    "docs": "lerna run docs",
-    "site": "lerna run site",
-    "package": "npm run build && npm run docs && npm run site",
-    "publish": "lerna publish --repo-version"
+    "site": "lerna run --scope @ngx-rapid/demo build && lerna run docs && lerna run site",
+    "deploy": "lerna run --scope @ngx-rapid/site deploy",
+    "package": "npm run build && npm run site",
+    "publish:prerelease": "lerna publish --cd-version=prerelease --force-publish=* --yes && npm run site && npm run deploy"
   },
   "author": "Piotr Kosmowski",
   "license": "MIT",
