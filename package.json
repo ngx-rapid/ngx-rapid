@@ -1,18 +1,26 @@
 {
   "name": "ngx-rapid",
+  "author": "Piotr Kosmowski",
+  "license": "MIT",
   "private": true,
-  "description": "",
+  "description": "Monorepo for ngx-rapid project",
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/ngx-rapid/ngx-rapid"
+  },
   "scripts": {
     "clean": "lerna clean --yes && lerna run clean",
     "install": "lerna bootstrap",
     "build": "lerna run build",
-    "site": "lerna run --scope @ngx-rapid/demo build && lerna run docs && lerna run site",
-    "deploy": "lerna run --scope @ngx-rapid/site deploy",
-    "package": "npm run build && npm run site",
-    "publish:prerelease": "lerna publish --cd-version=prerelease --force-publish=* --yes && npm run site && npm run deploy"
+    "docs": "lerna run docs",
+    "site": "lerna run site",
+    "deploy": "lerna run deploy",
+    "dev": "lerna run --scope @ngx-rapid/site build",
+    "publish:prerelease": "lerna publish --cd-version=prerelease --force-publish=* --yes && npm run docs && npm run site && npm run deploy",
+    "publish:patch": "lerna publish --cd-version=patch --force-publish=* --yes && npm run docs && npm run site && npm run deploy",
+    "publish:minor": "lerna publish --cd-version=minor --force-publish=* --yes && npm run docs && npm run site && npm run deploy",
+    "publish:major": "lerna publish --cd-version=major --force-publish=* --yes && npm run docs && npm run site && npm run deploy"
   },
-  "author": "Piotr Kosmowski",
-  "license": "MIT",
   "devDependencies": {
     "lerna": "^2.7.1"
   }
