@@ -1,6 +1,8 @@
 # ngx-rapid
 
-[![npm version](https://badge.fury.io/js/%40ngx-rapid%2Fcore.svg)](https://badge.fury.io/js/%40ngx-rapid%2Fcore)
+Core: [![npm version](https://badge.fury.io/js/%40ngx-rapid%2Fcore.svg)](https://badge.fury.io/js/%40ngx-rapid%2Fcore) 
+ Form: [![npm version](https://badge.fury.io/js/%40ngx-rapid%2Fform.svg)](https://badge.fury.io/js/%40ngx-rapid%2Fform) 
+ Crud: [![npm version](https://badge.fury.io/js/%40ngx-rapid%2Fcrud.svg)](https://badge.fury.io/js/%40ngx-rapid%2Fcrud) 
 
 # Documentation
 
