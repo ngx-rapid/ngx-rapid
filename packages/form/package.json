@@ -7,7 +7,7 @@
   "description": "Form components for Angular",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ngx-rapid/ngx-rapid/tree/master/packages/site"
+    "url": "https://github.com/ngx-rapid/ngx-rapid/tree/master/packages/form"
   },
   "main": "dist/bundles/form.umd.js",
   "publishConfig": {

@@ -15,7 +15,7 @@
     "docs": "lerna run docs",
     "site": "lerna run site",
     "deploy": "lerna run deploy",
-    "dev": "lerna run --scope @ngx-rapid/site build",
+    "dev": "lerna run --scope @ngx-rapid/site start --stream",
     "publish:prerelease": "lerna publish --cd-version=prerelease --force-publish=* --yes && npm run docs && npm run site && npm run deploy",
     "publish:patch": "lerna publish --cd-version=patch --force-publish=* --yes && npm run docs && npm run site && npm run deploy",
     "publish:minor": "lerna publish --cd-version=minor --force-publish=* --yes && npm run docs && npm run site && npm run deploy",

@@ -7,7 +7,7 @@
   "description": "Core components for ngx-rapid products",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ngx-rapid/ngx-rapid/tree/master/packages/site"
+    "url": "https://github.com/ngx-rapid/ngx-rapid/tree/master/packages/core"
   },
   "main": "dist/bundles/core.umd.js",
   "publishConfig": {
