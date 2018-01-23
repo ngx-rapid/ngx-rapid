@@ -1,8 +1,15 @@
 {
   "name": "@ngx-rapid/form",
-  "version": "0.0.1-41",
-  "main": "dist/bundles/form.umd.js",
+  "version": "0.0.1-42",
+  "author": "Piotr Kosmowski",
+  "license": "MIT",
   "private": false,
+  "description": "Form components for Angular",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngx-rapid/ngx-rapid/tree/master/packages/site"
+  },
+  "main": "dist/bundles/form.umd.js",
   "publishConfig": {
     "access": "public"
   },
@@ -20,7 +27,7 @@
   "devDependencies": {
     "@angular/core": "^5.0.0",
     "@compodoc/compodoc": "^1.0.5",
-    "@ngx-rapid/core": "^0.0.1-41",
+    "@ngx-rapid/core": "^0.0.1-42",
     "ng-packagr": "^1.6.0",
     "typescript": "~2.4.2"
   },

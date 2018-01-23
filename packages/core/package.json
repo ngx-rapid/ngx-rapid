@@ -1,8 +1,15 @@
 {
   "name": "@ngx-rapid/core",
-  "version": "0.0.1-41",
-  "main": "dist/bundles/core.umd.js",
+  "version": "0.0.1-42",
+  "author": "Piotr Kosmowski",
+  "license": "MIT",
   "private": false,
+  "description": "Core components for ngx-rapid products",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngx-rapid/ngx-rapid/tree/master/packages/site"
+  },
+  "main": "dist/bundles/core.umd.js",
   "publishConfig": {
     "access": "public"
   },

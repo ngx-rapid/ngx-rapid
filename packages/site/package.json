@@ -1,7 +1,14 @@
 {
   "name": "@ngx-rapid/site",
-  "version": "0.0.1-41",
+  "version": "0.0.1-42",
+  "author": "Piotr Kosmowski",
   "license": "MIT",
+  "private": true,
+  "description": "Documentation site for ngx-rapid products",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngx-rapid/ngx-rapid/tree/master/packages/site"
+  },
   "scripts": {
     "clean": "rm -rf ./dist",
     "ng": "ng",
@@ -17,7 +24,6 @@
     "postprocess": "replace '__CURRENT_VERSION__' $npm_package_version dist -r",
     "deploy": "gh-pages -d dist -r git@github.com:ngx-rapid/ngx-rapid.github.io.git -b master -g $npm_package_version"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^5.0.0",
     "@angular/common": "^5.0.0",
@@ -28,9 +34,9 @@
     "@angular/platform-browser": "^5.0.0",
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^5.0.0",
-    "@ngx-rapid/core": "^0.0.1-41",
-    "@ngx-rapid/crud": "^0.0.1-41",
-    "@ngx-rapid/form": "^0.0.1-41",
+    "@ngx-rapid/core": "^0.0.1-42",
+    "@ngx-rapid/crud": "^0.0.1-42",
+    "@ngx-rapid/form": "^0.0.1-42",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
