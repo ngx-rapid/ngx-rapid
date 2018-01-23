@@ -4,12 +4,14 @@
   "license": "MIT",
   "private": true,
   "description": "Monorepo for ngx-rapid project",
-  "repository":{
+  "repository": {
     "type": "git",
     "url": "https://github.com/ngx-rapid/ngx-rapid"
   },
   "scripts": {
-    "clean": "lerna clean --yes && lerna run clean",
+    "clean": "npm run clean:nodemodules & npm run clean:dist",
+    "clean:nodemodules": "lerna clean --yes",
+    "clean:dist": "lerna run clean",
     "install": "lerna bootstrap",
     "build": "lerna run build",
     "docs": "lerna run docs",

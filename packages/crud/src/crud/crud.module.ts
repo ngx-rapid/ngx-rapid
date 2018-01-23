@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 
 import {CrudComponent} from "./crud.component";
 
+import {FormModule} from '@ngx-rapid/form';
 /**
  * This is sample documentation
  */
@@ -10,7 +11,7 @@ import {CrudComponent} from "./crud.component";
   declarations: [
     CrudComponent
   ],
-  imports: [],
+  imports: [FormModule],
   exports: [CrudComponent],
   providers: []
 })
