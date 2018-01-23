@@ -1,25 +1,26 @@
-<p>Hello, this is documentation for the version: __CURRENT_VERSION__</p>
-<ul>
-    <li>Latest documentation: <a href="https://ngx-rapid.github.io">https://ngx-rapid.github.io</a></li>
-    <li>Latest demo: <a href="https://ngx-rapid.github.io/demo">https://ngx-rapid.github.io/demo</a></li>
-    <li>Latest api:
-        <ul>
-            <li><a href="https://ngx-rapid.github.io/api/form">https://ngx-rapid.github.io/api/form</a></li>
-            <li><a href="https://ngx-rapid.github.io/api/crud">https://ngx-rapid.github.io/api/crud</a></li>
-        </ul>
-    </li>
-</ul>
-<ul>
-    <li>This version tag documentation: <a href="https://rawgit.com/ngx-rapid/ngx-rapid.github.io/__CURRENT_VERSION__/index.html">https://rawgit.com/ngx-rapid/ngx-rapid.github.io/__CURRENT_VERSION__/index.html</a>
-    </li>
-    <li>This version tag demo: <a href="https://rawgit.com/ngx-rapid/ngx-rapid.github.io/__CURRENT_VERSION__/demo/index.html">https://rawgit.com/ngx-rapid/ngx-rapid.github.io/__CURRENT_VERSION__/demo/index.html</a>
-    </li>
-    <li>This version tag api:
-        <ul>
-            <li><a href="https://rawgit.com/ngx-rapid/ngx-rapid.github.io/__CURRENT_VERSION__/api/form/index.html">https://rawgit.com/ngx-rapid/ngx-rapid.github.io/__CURRENT_VERSION__/api/form/index.html</a>
-            </li>
-            <li><a href="https://rawgit.com/ngx-rapid/ngx-rapid.github.io/__CURRENT_VERSION__/api/crud/index.html">https://rawgit.com/ngx-rapid/ngx-rapid.github.io/__CURRENT_VERSION__/api/crud/index.html</a>
-            </li>
-        </ul>
-    </li>
-</ul>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Demo</title>
+  <base href="/">
+  <script type="text/javascript">
+    function determineBaseHref(){
+      var location = window.location;
+      if(location.hostname.indexOf('localhost') > -1){
+        return '/';
+      }
+      return location.pathname.replace('index.html','')
+
+    }
+    document.getElementsByTagName('base')[0].setAttribute('href',determineBaseHref());
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <h1>Version: __CURRENT_VERSION__</h1>
+  <app-root></app-root>
+</body>
+</html>

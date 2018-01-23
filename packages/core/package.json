@@ -1,6 +1,6 @@
 {
   "name": "@ngx-rapid/core",
-  "version": "0.0.1-39",
+  "version": "0.0.1-40",
   "main": "dist/bundles/core.umd.js",
   "private": false,
   "publishConfig": {
@@ -9,8 +9,8 @@
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "ng-packagr",
-    "docs": "./node_modules/.bin/compodoc ./src/ -p tsconfig.docs.json -d dist/docs",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "docs": "./node_modules/.bin/compodoc ./src/ --hideGenerator --silent --tsconfig tsconfig.docs.json --output dist/docs"
   },
   "peerDependencies": {
     "@angular/core": "^5.0.0",
