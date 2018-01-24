@@ -7,10 +7,12 @@ import {AppComponent} from './app.component';
 import {SampleModule} from '@ngx-rapid/core';
 import {FormModule} from '@ngx-rapid/form';
 import {CrudModule} from '@ngx-rapid/crud';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

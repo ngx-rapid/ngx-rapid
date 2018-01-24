@@ -11,6 +11,12 @@
     "typeRoots": [
       "node_modules/@types"
     ],
+    "paths": {
+      "@ngx-rapid/core": ["./core/src/index"],
+      "@ngx-rapid/form": ["./form/src/index"],
+      "@ngx-rapid/crud": ["./crud/src/index"],
+      "*": ["site/node_modules/*"]
+    },
     "baseUrl": "../",
     "rootDir": "../",
     "lib": [
