@@ -4,9 +4,9 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-guides',
   template: `
-    <div class="container">
+    <mat-card class="container">
       <div *ngIf="route.params | async as params" [innerHtml]="contents[params.id]"></div>
-    </div>
+    </mat-card>
   `,
 })
 export class GuidesComponent {
