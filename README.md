@@ -3,7 +3,7 @@
 Core: [![npm version](https://badge.fury.io/js/%40ngx-rapid%2Fcore.svg)](https://badge.fury.io/js/%40ngx-rapid%2Fcore) 
  Form: [![npm version](https://badge.fury.io/js/%40ngx-rapid%2Fform.svg)](https://badge.fury.io/js/%40ngx-rapid%2Fform) 
  Crud: [![npm version](https://badge.fury.io/js/%40ngx-rapid%2Fcrud.svg)](https://badge.fury.io/js/%40ngx-rapid%2Fcrud) 
-
+ CI: [![CircleCI](https://circleci.com/gh/ngx-rapid/ngx-rapid.svg?style=svg)](https://circleci.com/gh/ngx-rapid/ngx-rapid)
 # Documentation
 
 * Latest
