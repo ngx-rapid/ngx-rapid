@@ -6,7 +6,6 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'guide', loadChildren: './guides/guides.module#GuidesModule' },
-  { path: 'examples', loadChildren: './examples/examples.module#ExamplesModule' }
 ];
 
 @NgModule({

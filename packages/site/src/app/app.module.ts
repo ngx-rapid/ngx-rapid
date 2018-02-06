@@ -10,13 +10,11 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {HomeComponent} from './home/home.component';
 import {MaterialModule} from './shared/material.module';
-import {NavbarComponent} from "./shared/navbar/navbar.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
   ],
   imports: [
     BrowserModule,
