@@ -1,8 +1,8 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {ExamplesComponent} from './examples.component';
-import {RouterModule} from "@angular/router";
-import {IndexQuickstartComponent} from "./index-quickstart.component";
+import {RouterModule} from '@angular/router';
+import {IndexQuickstartComponent} from './index-quickstart.component';
 
 @NgModule({
   imports: [
