@@ -5,6 +5,10 @@ cache:
   directories:
     - $HOME/.npm
     - node_modules
+    - packages/core/node_modules
+    - packages/crud/node_modules
+    - packages/form/node_modules
+    - packages/site/node_modules
 node_js:
   - "6"
 
