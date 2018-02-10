@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'example-quickstart',
+  selector: 'app-example-quickstart',
   templateUrl: './quickstart.component.html',
   styleUrls: ['./quickstart.component.scss']
 })

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'index-quickstart',
+  selector: 'app-index-quickstart',
   template: `
 This is quickstart index
   `
