@@ -1,6 +1,6 @@
 {
   "name": "@ngx-rapid/site",
-  "version": "0.0.1-47",
+  "version": "0.0.1-48",
   "author": "Piotr Kosmowski",
   "license": "MIT",
   "private": true,
@@ -14,7 +14,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "test": "ng test --single-run",
+    "testing": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "site": "rm -rf ./dist/ && npm run build && npm run build:api && npm run postprocess",
