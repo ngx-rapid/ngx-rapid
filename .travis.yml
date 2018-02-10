@@ -29,6 +29,7 @@ script:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+  - "$SSH_PRV_KEY > ~/.ssh/id_rsa"
   - "$SSH_PUB_KEY > ~/.ssh/id_rsa.pub"
   - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && npm run publish:ci
 
