@@ -20,7 +20,7 @@
     "site": "lerna run site",
     "deploy": "lerna run deploy",
     "dev": "lerna run --scope @ngx-rapid/site start --stream",
-    "version:ci": "lerna publish --cd-version=prerelease --skip-npm --force-publish=* --yes",
+    "version:ci": "git status && lerna publish --cd-version=prerelease --skip-npm --force-publish=* --yes",
     "publish:ci": "lerna publish --repo-version=`node -pe \"require('./lerna.json').version\"` --skip-git --force-publish=* --yes && npm run docs && npm run site && npm run deploy",
     "publish:prerelease": "lerna publish --cd-version=prerelease --force-publish=* --yes && npm run docs && npm run site && npm run deploy",
     "publish:patch": "lerna publish --cd-version=patch --force-publish=* --yes && npm run docs && npm run site && npm run deploy",
