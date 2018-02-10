@@ -3,7 +3,7 @@ import {CommonModule} from '@angular/common';
 import {RouterModule} from '@angular/router';
 
 import {GuidesComponent} from './guides.component';
-import {MatCardModule} from "@angular/material";
+import {MatCardModule} from '@angular/material';
 
 @NgModule({
   imports: [
