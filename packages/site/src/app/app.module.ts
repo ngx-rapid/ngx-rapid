@@ -9,6 +9,7 @@ import {CrudModule} from '@ngx-rapid/crud';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {HomeComponent} from './home/home.component';
+import {SharedModule} from './shared/shared.module';
 import {MaterialModule} from './shared/material.module';
 
 @NgModule({
@@ -20,6 +21,8 @@ import {MaterialModule} from './shared/material.module';
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
+    BrowserAnimationsModule,
+    SharedModule,
     AppRoutingModule,
     SampleModule,
     FormModule,
