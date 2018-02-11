@@ -22,7 +22,8 @@ install:
   - npm install
 
 script:
-- npm run version:ci
+- export VERSION=`node -pe \"require('./lerna.json').version\"`-$TRAVIS_BUILD_NUMBER
+- npm run version
 - npm run lint
 - npm run test
 - npm run build
