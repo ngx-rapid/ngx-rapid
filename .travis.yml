@@ -19,8 +19,6 @@ before_install:
   - "npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN"
 
 install:
-  - git status
-  - ls -alt
   - npm install
 
 script:
