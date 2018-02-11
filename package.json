@@ -27,7 +27,7 @@
     "publish:minor": "lerna publish --cd-version=minor --force-publish=* --yes && npm run docs && npm run site && npm run deploy",
     "publish:major": "lerna publish --cd-version=major --force-publish=* --yes && npm run docs && npm run site && npm run deploy",
     "lerna": "lerna test",
-    "version": "lerna publish --repo-version=${VERSION} --skip-npm --skip-git --force-publish=* --yes",
+    "version": "lerna --loglevel verbose publish --repo-version=${VERSION} --skip-npm --skip-git --force-publish=* --yes",
     "publish": "lerna publish --repo-version=`node -pe \"require('./lerna.json').version\"` --skip-git --force-publish=* --yes && npm run docs && npm run site && npm run deploy"
   },
   "devDependencies": {
