@@ -23,15 +23,14 @@ install:
 
 script:
 - npm run version:ci
-- npm run lint
-- npm run test
-- npm run build
+#- npm run lint
+#- npm run test
+#- npm run build
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
-  - "$SSH_PRV_KEY > ~/.ssh/id_rsa"
-  - "$SSH_PUB_KEY > ~/.ssh/id_rsa.pub"
-  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && npm run publish:ci
+#  - bash <(curl -s https://codecov.io/bash)
+#  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && npm run publish:ci
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && npm run testgh
 
 branches:
   only:
