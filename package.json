@@ -20,17 +20,10 @@
     "site": "lerna run site",
     "deploy": "lerna run deploy",
     "dev": "lerna run --scope @ngx-rapid/site start --stream",
-    "version:ci": "git status && lerna publish --repo-version=`node -pe \"require('./lerna.json').version\"`-$TRAVIS_JOB_NUMBER --skip-git --skip-npm --force-publish=* --yes",
-    "publish:ci": "lerna publish --repo-version=`node -pe \"require('./lerna.json').version\"` --skip-git --force-publish=* --yes && npm run docs && npm run site && npm run deploy",
-    "publish:prerelease": "lerna publish --cd-version=prerelease --force-publish=* --yes && npm run docs && npm run site && npm run deploy",
-    "publish:patch": "lerna publish --cd-version=patch --force-publish=* --yes && npm run docs && npm run site && npm run deploy",
-    "publish:minor": "lerna publish --cd-version=minor --force-publish=* --yes && npm run docs && npm run site && npm run deploy",
-    "publish:major": "lerna publish --cd-version=major --force-publish=* --yes && npm run docs && npm run site && npm run deploy",
-    "lerna": "lerna test",
-    "version": "lerna --loglevel verbose publish --repo-version=${VERSION} --skip-npm --skip-git --force-publish=* --yes",
+    "version:ci": "lerna publish --repo-version=`node -pe \"require('./lerna.json').version\"`-$TRAVIS_BUILD_NUMBER --skip-git --skip-npm --force-publish=* --yes",
     "publish": "lerna publish --repo-version=`node -pe \"require('./lerna.json').version\"` --skip-git --force-publish=* --yes && npm run docs && npm run site && npm run deploy"
   },
   "devDependencies": {
-    "lerna": "2.7.1"
+    "lerna": "^2.7.1"
   }
 }
