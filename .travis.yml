@@ -22,14 +22,17 @@ install:
   - npm install
 
 script:
-- npm run version:ci
+- export REPO_VERSION=`node -pe "require('./lerna.json').version"`-$TRAVIS_BUILD_NUMBER
+- npm run version
 - npm run lint
 - npm run test
 - npm run build
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && npm run publish
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && npm run publish:git
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && npm run publish:npm
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && npm run publish:site
 
 branches:
   only:

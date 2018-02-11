@@ -20,8 +20,10 @@
     "site": "lerna run site",
     "deploy": "lerna run deploy",
     "dev": "lerna run --scope @ngx-rapid/site start --stream",
-    "version:ci": "lerna publish --repo-version=`node -pe \"require('./lerna.json').version\"`-$TRAVIS_BUILD_NUMBER --skip-git --skip-npm --force-publish=* --yes",
-    "publish": "lerna publish --repo-version=`node -pe \"require('./lerna.json').version\"` --skip-git --force-publish=* --yes && npm run docs && npm run site && npm run deploy"
+    "version": "lerna publish --repo-version=$REPO_VERSION --skip-git --skip-npm --force-publish=* --yes",
+    "publish:git": "git tag v$REPO_VERSION && git push origin v$REPO_VERSION",
+    "publish:npm": "lerna publish --repo-version=$REPO_VERSION --skip-git --force-publish=* --yes",
+    "publish:site": "npm run docs && npm run site && npm run deploy"
   },
   "devDependencies": {
     "lerna": "^2.7.1"
