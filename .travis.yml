@@ -22,6 +22,7 @@ install:
   - npm install
 
 script:
+- npm run testgh
 #- npm run version:ci
 #- npm run lint
 #- npm run test
