@@ -20,7 +20,7 @@
     "site": "lerna run site",
     "deploy": "lerna run deploy",
     "dev": "lerna run --scope @ngx-rapid/site start --stream",
-    "version": "lerna publish --repo-version=${VERSION} --npm-tag=${VERSION} --skip-npm --skip-git --force-publish=* --yes",
+    "version": "lerna publish --repo-version=${VERSION} --skip-npm --skip-git --force-publish=* --yes",
     "publish": "lerna publish --repo-version=`node -pe \"require('./lerna.json').version\"` --skip-git --force-publish=* --yes && npm run docs && npm run site && npm run deploy"
   },
   "devDependencies": {
