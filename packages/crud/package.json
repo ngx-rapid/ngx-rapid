@@ -1,6 +1,6 @@
 {
   "name": "@ngx-rapid/crud",
-  "version": "0.0.1-49",
+  "version": "0.0.1",
   "author": "Piotr Kosmowski",
   "license": "MIT",
   "private": false,
@@ -27,8 +27,8 @@
   "devDependencies": {
     "@angular/core": "^5.0.0",
     "@compodoc/compodoc": "^1.0.5",
-    "@ngx-rapid/core": "^0.0.1-49",
-    "@ngx-rapid/form": "^0.0.1-49",
+    "@ngx-rapid/core": "^0.0.1",
+    "@ngx-rapid/form": "^0.0.1",
     "ng-packagr": "^1.6.0",
     "typescript": "~2.4.2"
   },
