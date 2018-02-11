@@ -23,7 +23,7 @@ install:
 
 script:
 - export VERSION=`node -pe "require('./lerna.json').version"`-$TRAVIS_BUILD_NUMBER
-- echo "setting version to: ${VERSION}"
+- echo setting version to: $VERSION
 - npm run version
 - npm run lint
 - npm run test
