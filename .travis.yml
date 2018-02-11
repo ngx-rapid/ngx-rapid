@@ -22,8 +22,8 @@ install:
   - npm install
 
 script:
-- git status
-- "test" > test.sh && git add --all && git commit -m "Test" && git push
+  - git status
+  - "test" > test.sh && git add --all && git commit -m "Test" && git push
 #- npm run version:ci
 #- npm run lint
 #- npm run test
