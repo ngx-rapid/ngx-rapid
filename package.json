@@ -29,7 +29,6 @@
     "lerna": "lerna test",
     "version": "lerna publish --repo-version=${VERSION} --skip-npm --skip-git --force-publish=* --yes",
     "publish": "lerna publish --repo-version=`node -pe \"require('./lerna.json').version\"` --skip-git --force-publish=* --yes && npm run docs && npm run site && npm run deploy"
-
   },
   "devDependencies": {
     "lerna": "2.7.1"
