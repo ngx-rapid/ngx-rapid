@@ -24,7 +24,7 @@
     "build:api:form": "cp -r ../form/dist/docs ./dist/api/form",
     "build:api:crud": "cp -r ../crud/dist/docs ./dist/api/crud",
     "postprocess": "replace '__CURRENT_VERSION__' $npm_package_version dist -r",
-    "deploy": "gh-pages -d dist -r git@github.com:ngx-rapid/ngx-rapid.github.io.git -b master -g $npm_package_version"
+    "deploy": "gh-pages -d dist -r https://${GH_TOKEN}@github.com/ngx-rapid/ngx-rapid.github.io.git -b master -g $npm_package_version"
   },
   "dependencies": {
     "@angular/animations": "^5.2.3",

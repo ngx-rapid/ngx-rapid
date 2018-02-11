@@ -22,16 +22,14 @@ install:
   - npm install
 
 script:
-- npm run testgh
-#- npm run version:ci
-#- npm run lint
-#- npm run test
-#- npm run build
+- npm run version:ci
+- npm run lint
+- npm run test
+- npm run build
 
 after_success:
-#  - bash <(curl -s https://codecov.io/bash)
-#  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && npm run publish:ci
-  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && npm run testgh
+  - bash <(curl -s https://codecov.io/bash)
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && npm run publish:ci
 
 branches:
   only:
