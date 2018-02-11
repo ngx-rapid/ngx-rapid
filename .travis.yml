@@ -19,7 +19,7 @@ before_install:
   - "npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN"
 
 install:
-#  - npm install
+  - npm install
 
 script:
 - git status
