@@ -29,7 +29,7 @@ script:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && npm run publish:ci
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && npm run publish
 
 branches:
   only:
