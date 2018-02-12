@@ -20,8 +20,8 @@
     "site": "lerna run site",
     "deploy": "lerna run deploy",
     "dev": "lerna run --scope @ngx-rapid/site start --stream",
-    "version:ci": "lerna publish --repo-version=$REPO_VERSION --npm-tag=v$REPO_VERSION --skip-npm --force-publish=* --yes",
-    "publish:git": "git tag v$REPO_VERSION && git push origin v$REPO_VERSION",
+    "version:ci": "lerna publish --repo-version=$REPO_VERSION --skip-git --skip-npm --force-publish=* --yes",
+    "publish:git": "git tag v$REPO_VERSION && git push source v$REPO_VERSION",
     "publish:npm": "lerna publish --repo-version=$REPO_VERSION --skip-git --force-publish=* --yes",
     "publish:site": "npm run docs && npm run site && npm run deploy"
   },
