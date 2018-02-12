@@ -36,8 +36,13 @@ before_deploy:
 
 deploy:
   - provider: releases
-    api_key: "${GH_TOKEN}"
     skip_cleanup: true
+    api_key: "${GH_TOKEN}"
+    on:
+      branch: master
+  - provider: npm
+    skip_cleanup: true
+    api_key: "${NPM_TOKEN}"
     on:
       branch: master
 
