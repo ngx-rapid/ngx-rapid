@@ -35,11 +35,11 @@ before_deploy:
       - git tag "v${REPO_VERSION}"
 
 deploy:
-  - provider: releases
-    skip_cleanup: true
-    api_key: "${GH_TOKEN}"
-    on:
-      branch: master
+#  - provider: releases
+#    skip_cleanup: true
+#    api_key: "${GH_TOKEN}"
+#    on:
+#      branch: master
   - provider: npm
     skip_cleanup: true
     api_key: "${NPM_TOKEN}"
