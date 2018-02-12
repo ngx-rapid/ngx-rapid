@@ -16,12 +16,12 @@
     "lint": "lerna run lint",
     "test": "lerna run test",
     "build": "lerna run build",
-    "build:site": "npm run docs && npm run site"
+    "build:site": "npm run docs && npm run site",
     "docs": "lerna run docs",
     "site": "lerna run site",
     "deploy": "lerna run deploy",
     "dev": "lerna run --scope @ngx-rapid/site start --stream",
-    "version:ci": "lerna publish --repo-version=$REPO_VERSION --skip-git --skip-npm --force-publish=* --yes",
+    "version:ci": "lerna publish --repo-version=$REPO_VERSION --skip-git --skip-npm --force-publish=* --yes"
   },
   "devDependencies": {
     "lerna": "^2.7.1"
