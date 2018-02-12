@@ -31,6 +31,9 @@ after_success:
   - bash <(curl -s https://codecov.io/bash)
   - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && npm run build:site
 
+before_deploy:
+      - git tag "v${REPO_VERSION}"
+
 deploy:
   - provider: releases
     api_key: "${GH_TOKEN}"
